@@ -1,0 +1,7 @@
+#include<iostream>
+using namespace std;
+int main(){
+    int radius=8;
+    float AreaOfCircle = 3.14*(radius*radius);
+    cout<<AreaOfCircle<<endl;
+}
