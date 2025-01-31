@@ -1,0 +1,15 @@
+#include<iostream>
+using namespace std;
+
+class Teacher{
+    
+    public:
+    Teacher(){
+        cout<<"I am a constructor"<<endl;
+    }
+    
+};
+
+int main(){
+    Teacher t1;
+}
