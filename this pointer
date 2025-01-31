@@ -1,0 +1,29 @@
+#include<iostream>
+using namespace std;
+class Book{
+    private:
+    int price;
+    
+    public:
+    string bookname;
+    string author;
+    string issuemonth;
+    
+    Book(string bookname, string author, string issuemonth, int price){
+        this->bookname=bookname;
+        this->author=author;
+        this->issuemonth=issuemonth;
+        this->price=price;
+    }
+    
+    void getInfo(){
+        cout<<bookname<<endl;
+        cout<<author<<endl;
+        cout<<issuemonth<<endl;
+        cout<<price<<endl;
+    }
+};
+int main(){
+  Book t1("geeks","greeks","january",600);
+    t1.getInfo();
+}
