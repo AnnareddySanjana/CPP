@@ -1,0 +1,34 @@
+#include<iostream>
+using namespace std;
+
+class Teacher{
+    private:
+    double salary;
+    
+    public:
+    string name;
+    string dept;
+    string subject;
+    
+    void setSalary(int s){
+        salary = s;
+        }
+        
+    int getSalary(){
+        return salary;
+    }
+};
+int main(){
+    Teacher t1;
+    t1.name="sanju";
+    t1.dept="CSE";
+    t1.setSalary(10000000);
+    
+    Teacher t2;
+    t2.setSalary(870000);
+    cout<<t1.name<<endl;
+    cout<<t1.dept<<endl;
+    cout<<t1.getSalary()<<endl;
+    cout<<t2.getSalary()<<endl;
+    
+}
