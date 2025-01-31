@@ -1,0 +1,14 @@
+#include<iostream>
+using namespace std;
+int sum(int num1, int num2){
+    int add = num1+num2;
+    return add;
+}
+int main(){
+    int a=9, b=10 , c=4, d=7, g=3;
+    cout<<sum(a,b)<<endl;
+    cout<<sum(g,d)<<endl;
+    cout<<sum(a,g)<<endl;
+    cout<<sum(b,c)<<endl;
+    
+}
