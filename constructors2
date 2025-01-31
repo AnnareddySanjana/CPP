@@ -1,0 +1,35 @@
+#include<iostream>
+using namespace std;
+
+class Teacher{
+    private:
+    double salary;
+    
+    public:
+    string name;
+    string dept;
+    string subject;
+    
+    Teacher(){
+        cout<<"simple constructor"<<endl;
+    }
+    
+    Teacher(string n, string d, string s, double sal){
+        name = n;
+        dept=d;
+        subject=s;
+        salary=sal;
+    }
+    void getInfo(){
+        cout<<name<<endl;
+        cout<<dept<<endl;
+        cout<<subject<<endl;
+        cout<<salary<<endl;
+    }
+};
+
+int main(){
+    Teacher t1("sanju", "CSE", "CPP", 90000);
+    t1.getInfo();
+    Teacher t2;
+}
