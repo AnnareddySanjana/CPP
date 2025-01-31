@@ -1,0 +1,13 @@
+#include<iostream>
+using namespace std;
+int print(int num){
+    int square = num*num;
+    return square;
+}
+
+int main(){
+    int a = 89,b=45,y=35;
+    cout<<print(a)<<endl;
+    cout<<print(b)<<endl;
+    cout<<print(y)<<endl;
+}
