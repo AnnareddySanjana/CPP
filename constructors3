@@ -1,0 +1,37 @@
+#include<iostream>
+using namespace std;
+
+class Teacher{
+    private:
+    double salary;
+    
+    public:
+    string name;
+    string dept;
+    string subject;
+    
+    Teacher(Teacher &obj){
+        cout<<"I am a copy constructor"<<endl;
+        this->name=obj.name;
+        return;
+    }
+    Teacher(string name, string dept, string subject, double salary){
+        this->name=name;
+        this->dept=dept;
+        this->subject=subject;
+        this->salary=salary;
+        }
+    
+    void getInfo(){
+        cout<<name<<endl;
+        cout<<dept<<endl;
+        cout<<subject<<endl;
+        cout<<salary<<endl;
+        return;
+    }
+};
+int main(){
+    Teacher t1("sanju","EEE","ECE",90000);
+    Teacher t2(t1);
+    t2.getInfo();
+}
