@@ -1,0 +1,25 @@
+Write a program where a class Student has private attributes name and age, and public member functions to set and display data.
+
+#include<iostream>
+using namespace std;
+class Student{
+    private:
+    string name;
+    int age;
+    
+    public:
+    void setNameandAge(string n, int a){
+        name=n;
+        a=age;
+        return;
+    }
+    void getNameandAge(){
+        cout<<name<<endl;
+        cout<<age<<endl;
+    }
+};
+int main(){
+    Student s1;
+    s1.setNameandAge("Sanju",20);
+    s1.getNameandAge();
+}
