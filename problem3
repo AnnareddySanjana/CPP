@@ -1,0 +1,29 @@
+Define a class Rectangle with private members length and width. Add a constructor to initialize values and a function to calculate the area.
+
+#include<iostream>
+using namespace std;
+class Rectangle{
+    private:
+    int length;
+    int breadth;
+    
+    public:
+    void setLength(int l){
+        length=l;
+        return;
+    }
+    void setBreadth(int b){
+        breadth = b;
+        return;
+    }
+    void CalculateArea(){
+        cout<<length*breadth;
+    }
+    
+};
+int main(){
+    Rectangle r;
+    r.setLength(8);
+    r.setBreadth(6);
+    r.CalculateArea();
+}
