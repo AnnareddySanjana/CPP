@@ -1,0 +1,25 @@
+Write a simple C++ program to define a class named Car with two data members (brand and year) and a method to display the details.
+
+#include<iostream>
+using namespace std;
+class Car{
+    public:
+    string brandname;
+    int year;
+    
+    Car(string brandname, int year){
+        this->brandname=brandname;
+        this->year=year;
+    }
+    void Brand(){
+        cout<<brandname<<endl;
+    }
+    void Year(){
+       cout<<year<<endl;
+    }
+};
+int main(){
+    Car c("TOYOTA",2004);
+    c.Brand();
+    c.Year();
+}
