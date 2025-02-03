@@ -1,0 +1,31 @@
+#include<iostream>
+using namespace std;
+
+class Cafe{
+    private:
+    int price;
+    
+    public:
+    string name;
+   
+    Cafe(string name ){
+        this->name=name;
+    }
+    
+     void set_Name_and_Price( int p){
+       
+        price=p;
+    }
+    
+    void get_Name_and_Price(){
+        cout<<name<<endl;
+        cout<<price<<endl;
+    }
+};
+
+
+int main(){
+    Cafe c("capuccino");
+    c.set_Name_and_Price(640);
+    c.get_Name_and_Price();
+}
