@@ -1,0 +1,33 @@
+#include<iostream>
+using namespace std;
+
+class Home{
+    private:
+    int reg_no;
+    
+    public:
+    int moneyneeded;
+    string name;
+    
+    void setRegno(int r){
+        reg_no=r;
+    }
+    Home(string name,int moneyneeded){
+        this->name=name;
+        
+        this->moneyneeded=moneyneeded;
+    }
+    void getInfo(){
+        cout<<name<<endl;
+        cout<<reg_no<<endl;
+        cout<<moneyneeded<<endl;
+    }
+    
+};
+
+
+int main(){
+    Home h("SANJANA NILAYAM",90000);
+    h.setRegno(350);
+    h.getInfo();
+}
