@@ -1,0 +1,41 @@
+#include<iostream>
+using namespace std;
+class Class1{
+    public:
+    string name;
+    int age;
+    
+    Class1(string name,int age){
+        this->name=name;
+        this->age=age;
+    }
+    
+};
+class Class2 : public Class1{
+    public:
+    int rollno;
+    
+    Class2(string name,int age,int rollno) : Class1(name,age){
+        this->rollno=rollno;
+    }
+};
+class Class3 : public Class2{
+    public:
+    string dept;
+    
+    Class3(string name,int age,int rollno,string dept) : Class2(name,age,rollno){
+        this->dept=dept;
+    }
+    void getInfo(){
+        cout<<name<<endl;
+        cout<<age<<endl;
+        cout<<rollno<<endl;
+        cout<<dept<<endl;
+    }
+};
+int main(){
+    Class3 c("sanju",20,3,"CSE");
+    c.getInfo();
+    return 0;
+    
+}
