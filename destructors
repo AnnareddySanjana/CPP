@@ -1,0 +1,30 @@
+#include<iostream>
+using namespace std;
+
+class Student{
+    private:
+    double *cgpaptr;
+    
+    public:
+    string name;
+    double cgpa;
+    
+    Student(string name,double cgpa){
+        this->name=name;
+        cgpaptr=new double;
+        *cgpaptr=cgpa;
+    }
+    ~Student(){
+        cout<<"Hi am a destructor";
+        delete cgpaptr;
+    }
+    void getInfo(){
+        cout<<name<<endl;
+        cout<<*cgpaptr<<endl;
+    }
+};
+int main(){
+    Student s("sanju",9.8);
+    s.getInfo();
+    return 0;
+}
