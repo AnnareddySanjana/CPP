@@ -1,0 +1,33 @@
+#include<iostream>
+using namespace std;
+
+class Parent{
+    public:
+    string name;
+    int age;
+    
+    ~Parent(){
+        cout<<"I am a destructor of Parent class"<<endl;
+    }
+};
+class Child : public Parent{
+    public:
+    int rollno;
+    
+    ~Child(){
+        cout<<"I am a destructor of Child class"<<endl;
+    }
+    void getInfo(){
+        cout<<name<<endl;
+        cout<<age<<endl;
+        cout<<rollno<<endl;
+    }
+};
+int main(){
+    Child c;
+    c.name="sanju";
+    c.age=20;
+    c.rollno=3;
+    c.getInfo();
+    return 0;
+}
