@@ -1,0 +1,30 @@
+#include<iostream>
+using namespace std;
+
+class Parent{
+    public:
+    string name;
+    int age;
+    
+    Parent(string name,int age){
+        this->name=name;
+        this->age=age;
+    }
+};
+class Child : public Parent{
+    public:
+    int rollno;
+    
+    Child(string name,int age,int rollno) : Parent(name,age){
+        this->rollno=rollno;
+    }
+    void getInfo(){
+        cout<<name<<endl;
+        cout<<age<<endl;
+        cout<<rollno<<endl;
+    }
+};
+int main(){
+    Child c("sanju",20,3);
+    c.getInfo();
+}
