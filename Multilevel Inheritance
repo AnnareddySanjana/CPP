@@ -1,0 +1,43 @@
+#include<iostream>
+using namespace std;
+class Class1{
+    public:
+    string name;
+    int age;
+    
+    Class1(){
+        cout<<"I am a class1 constructor"<<endl;
+    }
+};
+class Class2 : public Class1{
+    public:
+    int rollno;
+    
+    Class2(){
+        cout<<"I am a class2 contructor"<<endl;
+    }
+};
+class Class3 : public Class2{
+    public:
+    string dept;
+    
+    Class3(){
+        cout<<"I am a class3 constructor"<<endl;
+    }
+
+    void getInfo(){
+        cout<<name<<endl;
+        cout<<age<<endl;
+        cout<<rollno<<endl;
+        cout<<dept<<endl;
+    }
+};
+int main(){
+    Class3 c;
+    c.name="sanju";
+    c.age=20;
+    c.rollno=3;
+    c.dept="CSE";
+    c.getInfo();
+    return 0;
+}
