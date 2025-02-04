@@ -28,5 +28,6 @@ int main(){
     c.name="sanju";
     c.age=20;
     c.rollno=3;
+    c.getInfo();
     return 0;
 }
