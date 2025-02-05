@@ -1,0 +1,23 @@
+#include<iostream>
+using namespace std;
+class Parent{
+  public:
+  string name;
+  int m1;
+  int m2;
+  
+  void Print(){
+      cout<<name<<endl;
+  }
+  void Print(int m1,int m2){
+      cout<<m1+m2<<endl;
+  }
+};
+int main(){
+    Parent p;
+    p.name="sanju";
+    
+   
+    p.Print();
+    p.Print(98,96);
+}
