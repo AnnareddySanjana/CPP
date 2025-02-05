@@ -1,0 +1,33 @@
+#include<iostream>
+using namespace std;
+class Person{
+    public:
+    string name;
+    int age;
+};
+class Teacher : public Person{
+    public: 
+    double salary;
+};
+class Student : public Person{
+    public:
+    int rollno;
+};
+class TA : public Student , public Teacher{
+    public:
+    string subject;
+};
+
+int main(){
+    TA t1;
+    t1.salary=90000;
+    t1.rollno=3;
+    cout<<t1.salary<<endl;
+    cout<<t1.rollno<<endl;
+    Student s1;
+    s1.name="sanju";
+    cout<<s1.name<<endl;
+    Teacher T;
+    T.age=28;
+    cout<<T.age<<endl;
+}
