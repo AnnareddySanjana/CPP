@@ -1,0 +1,26 @@
+#include<iostream>
+using namespace std;
+
+class Student{
+    public:
+        string name;
+        int rollno;
+};
+class Teacher{
+    public:
+    string dept;
+    double salary;
+};
+class TA : public Student, public Teacher{
+    public:
+    string duration;
+};
+int main(){
+    TA t1;
+    t1.name="sanju";
+    t1.dept="CSE";
+    t1.duration="quarter";
+    cout<<t1.name<<endl;
+    cout<<t1.dept<<endl;
+    cout<<t1.duration<<endl;
+}
