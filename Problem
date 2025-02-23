@@ -1,0 +1,20 @@
+#include<iostream>
+#include<string>
+using namespace std;
+string hyphensaside(string &ch){
+    string hyphens="",others="";
+    for(char c : ch){
+    if(c == '-'){
+      hyphens += c;
+    }
+    else{
+       others += c;
+    }
+    }
+    return others+hyphens;
+}
+int main(){
+    string input;
+    cin>>input;
+    cout<<hyphensaside(input)<<endl;
+}
